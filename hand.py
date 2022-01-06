@@ -1,8 +1,17 @@
+class Weapon:
+    def __init__(self, name, rock, paper, scissors, lizard, spock):
+        
+            self.name = name
+            self.hand = ['self', 'name', 'rock', 'paper', 'scissors', 'lizard', 'spock']
+            print("Start dino turn")
+            self.hand()
+            self.hand = int(input("Select the robot to attack"))
+            self.hand[self.hand]
 
 
 
-class Hand
-     def __init__(self, name, rock, paper, scissors, lizard, spock):
+class Hand(self):
+    def __init__(self, name, rock, paper, scissors, lizard, spock):
         self.name = name
         self.rock = rock
         self.paper = paper
