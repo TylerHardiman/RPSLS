@@ -1,17 +1,37 @@
-player_one_lives = 2
-player_two_lives = 2
+from ai import Ai
+from human import Human
+
 
 class Battlefield:
     def __init__(self):
-        self.human = ''
-        self.ai = ''
+        self.player_one = None
+        self.player_two = None
         # We would need to setup a input and if elif to setup how many players based off of selection
+    
+    def run_game(self):
+        self.game_welcome()
+        self.player_select()
+        
+    def game_welcome(self):
+        print(f'Welcome to Rock, Paper, Scissors, Lizard, Spock!')
+        pass
     
     def setup_game(self):
         print("Welcome, we will begin the throw down shortly")
         print("Select player two Ai or Human?")
-        self.ai()
-        self.human()     
+        self.player_select()    
+
+    def player_select(self):# need input to gather if they player wants 1 or 2 players
+        if input == 1:
+            self.player_one = Human()
+            self.player_two = Ai()
+            print('You are Human!')
+        elif input == 2:
+            self.player_one = Human()
+            self.player_two = Human()
+            self.player_two 
+            print('Ai vs Ai')
+            pass
 
     def run_game_welcome(self):
         lives = 2
