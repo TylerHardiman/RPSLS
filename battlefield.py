@@ -12,9 +12,4 @@ class battlefield():
                     # check first to see if its a tie, then check all of the win conditions for player 1 finallay our else can be player 2 wins 
         while len(self.fleet.robots) > 0 and len(self.herd.dinosaur) > 0:
 
-
-    def human_turn():
-    
-    def ai_turn():
-
     def winner():

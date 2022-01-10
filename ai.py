@@ -1,16 +1,25 @@
-from hand import Hand
+from player import Player
 
-class Ai():
+class Ai:
     def __init__(self):
-        pass #needs super init
+        self.ai = Ai
 
-    def ai_hand_options(self):
-        print('Current Hand options: ')
+    def random_ai():
+        print('Current gesture option: ')
         i = 0
-        for self.hand in Hand:
-            print(f' Press {i} to select {self.hand}')
-            i += 1
+        for self.gestures in Ai:
+            print(f' Press {i} to select a random {self.gestures}')
 
 
-    def choose_gesture(self):
-        pass # this is where our random selection logic will go
+        pass # needs its super()__init__
+
+
+
+    # #class Aidata():
+    #     def __init__(self, name): # remember all of the properties will be passed down to the child classes human and ai
+    #         self.chosen_gesture = ""
+    #         self.name = name
+    #         self.wins = 0
+    #         self.gestures = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
+
+    #     def random():
