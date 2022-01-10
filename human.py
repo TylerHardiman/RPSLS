@@ -5,7 +5,7 @@ class Human:
         self.human = Human
         pass # needs its super()__init__
 
-    def player_choices(self):
+    def choices(self):
         print('Current Hand options: ')
         i = 0
         for self.gestures in []:
