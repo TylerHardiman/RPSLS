@@ -1,34 +1,35 @@
+from typing_extensions import Self
 from player import Player
+from random import Random, randint
 
-class Ai:
+class Ai(Player):
     def __init__(self):
-        self.ai = Ai
-        # missing super 
-
-    def choices(self):
-        print('Current gesture option: ')
-        i = 0
-        for self.gestures in Ai:
-            print(f' Press {i} to select a random {self.gestures}')
-
-
-        pass # needs its super()__init__
-
-
-
-    # #class Aidata():
-    #     def __init__(self, name): # remember all of the properties will be passed down to the child classes human and ai
-    #         self.chosen_gesture = ""
-    #         self.name = name
-    #         self.wins = 0
-    #         self.gestures = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
-
-    #     def random():
+        self.name = ""
+        self.random_gestures = ""
+        super().__init__()
+        
+    # def random(self):
+    #    Random(randint[self.random_gestures])
+    #    print(self.random_gestures)
+    
+    def random_number(self):
+     end_point = len(self.random_gestures) - 1
+     rng = randint(0,end_point)
+     return (rng)
 
 
-# while self.player_one_wins < 2 and len(self.player_two_wins) <2:
-#     self.player_one_wins()
-#     if len(self.player_two_wins) == 0 
+    def chosen_gesture(self):
+        self.random_gestures = self.random_number(Player.gestures)
+        print(f"{self.random_gestures}")
+        return self.random_gestures
+
+#     def choices(self):
+#         print('Current gesture option: ')
+#         i = 0
+#         for self.gestures in Ai:
+#             print(Random)
 #         pass
-#     else:
-#         self.player_two_wins
+
+
+
+Ai.chosen_gesture()
