@@ -13,7 +13,7 @@ class Battlefield:
     def run_game(self):
         self.game_welcome()
         self.player_select()
-        
+                                                                
     def game_welcome(self):
         print(f'Welcome to Rock, Paper, Scissors, Lizard, Spock!')
         pass
