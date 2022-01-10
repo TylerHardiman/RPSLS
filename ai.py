@@ -1,18 +1,16 @@
 from player import Player
-from random import Random
+import random
 
 class Ai(Player):
     def __init__(self):
-        self.name = ""
-        self.random_gestures = ""
         super().__init__()
     
-    def ai_turn(self):
+    def choose_gesture(self):
         # print(f"Ai randomly selects {self.random_gestures}")
-        Player.self.random_gestures = Random(self.random_gestures)
-        print(self.random_gestures)
+        self.chosen_gesture = random.choice(self.gestures)
+        print(f'AI has chosen {self.chosen_gesture}')
 
-Ai.ai_turn(Player)   
+
     # def chosen_gesture(self):
     #     self.random_gestures = self.random_number #random_number(Player.gestures)
     #     print(f"{self.random_gestures}")
