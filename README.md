@@ -1,14 +1,11 @@
 # RPSLS
-Team Code Rock, Paper, Scissors, Lizard, Spock
 
-Class heirarchy battlefield -> Human/Ai -> Hand
+Rock, Paper, Scissors, Paper, Spock!
 
-battlefeild CLass - how turns go - multiplayer/singleplayer select
-def battlefield()
-__init__
-run_game()
-display welcome(multiplayer select{helper function?})
+Rock crushes Scissors and Lizard
+Paper covers Rock and disproves Spock
+Scissors cuts Paper and decapitates Lizard
+Lizard eats Paper and poisons Spock
+Spock vaporises Rock and smashes Scissors
 
-
-human/AI - input/random
-RPSLS - effectiveness, each move
+First to two wins!

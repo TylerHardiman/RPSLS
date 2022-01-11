@@ -1,5 +1,5 @@
 class Player():
-        def __init__(self): # remember all of the properties will be passed down to the child classes human and ai
+        def __init__(self):
             self.chosen_gesture = ""
             self.name = ""
             self.wins = 0
