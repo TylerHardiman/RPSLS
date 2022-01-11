@@ -10,7 +10,7 @@ class Battlefield:
         self.setup_game()
         self.player_select() # TESTED
         self.battle_loop()  # Needs Testing after logic fixed
-        #self.winner() #needs testing 
+        self.winner() #needs testing 
     
     def setup_game(self):
         print("Welcome, we will begin the throw down shortly")
@@ -24,19 +24,19 @@ class Battlefield:
             if self.player_one.chosen_gesture == self.player_two.chosen_gesture:   # make a check for each gesture player one could choose 
                 print("its a tie")                                                  # check to see if its a tie, check if player one wins, else player 2 wins.
             elif self.player_one.chosen_gesture == "Rock" and self.player_two.chosen_gesture == ("Scissors" or "Lizard"):
-                print("player one winds this hand")
+                print("player one wins this hand")
                 self.player_one.wins += 1
-            elif self.player_one.chosen_gesture == "Rock" and self.player_two.chosen_gesture == ("Scissors" or "Lizard"):
-                print("player one winds this hand")
+            elif self.player_one.chosen_gesture == "Paper" and self.player_two.chosen_gesture == ("Rock" or "Spock"):
+                print("player one wins this hand")
                 self.player_one.wins += 1
-            elif self.player_one.chosen_gesture == "Rock" and self.player_two.chosen_gesture == ("Scissors" or "Lizard"):
-                print("player one winds this hand")
+            elif self.player_one.chosen_gesture == "Scissors" and self.player_two.chosen_gesture == ("Papers" or "Lizard"):
+                print("player one wins this hand")
                 self.player_one.wins += 1
-            elif self.player_one.chosen_gesture == "Rock" and self.player_two.chosen_gesture == ("Scissors" or "Lizard"):
-                print("player one winds this hand")
+            elif self.player_one.chosen_gesture == "Lizard" and self.player_two.chosen_gesture == ("Paper" or "Spock"):
+                print("player one wins this hand")
                 self.player_one.wins += 1
-            elif self.player_one.chosen_gesture == "Rock" and self.player_two.chosen_gesture == ("Scissors" or "Lizard"):
-                print("player one winds this hand")
+            elif self.player_one.chosen_gesture == "Spock" and self.player_two.chosen_gesture == ("Rock" or "Scissors"):
+                print("player one wins this hand")
                 self.player_one.wins += 1
             else:
                 print("player 2 wins this hand")
@@ -45,14 +45,6 @@ class Battlefield:
     def check_lives(self, player_one_lives):
         if(player_one_lives[0]<= 0):
             player_one_lives.pop(0)
-
-    def declare_winner(self):
-        if len(player_two_lives) == 0:
-            print("Player One wins!!!")
-        elif len(player_one_lives) == 0:
-            print("Player Two Wins!!!")
-        else:
-            print("Tie Breakerrrr?")
 
     def player_select(self):# need input to gather if they player wants 1 or 2 players
         player_choice = input("enter 1 for single player or 2 for mulit player")
@@ -63,12 +55,9 @@ class Battlefield:
         elif player_choice == "2":
             self.player_one = Human()
             self.player_two = Human()
-            self.player_two 
             print('Ai vs Ai')
             pass
         
-
-
     def winner(self):
             if self.player_two.wins == 2:
                 print()
